@@ -45,10 +45,10 @@ If you do not want to build it manually, just download the [current jar](https:/
 
 This is a small webapp, you can run it locally or on a server, as long as you have access to the ZooKeeper nodes controlling kafka.
 
-```
+```bash
 java -cp KafkaOffsetMonitor-assembly-0.2.1.jar \
      com.quantifind.kafka.offsetapp.OffsetGetterWeb \
-     --offsetStorage kafka
+     --offsetStorage kafka \
      --zk zk-server1,zk-server2 \
      --port 8080 \
      --refresh 10.seconds \
